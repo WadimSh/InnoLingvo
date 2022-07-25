@@ -11,24 +11,37 @@
   <header class="header">
     <nav class="header__navigation">
       <div class="header__logo">
-
+        <img class="logo" src="<%=require('./images/logo.svg')%>" alt="Логотип">
       </div>
       <ul class="header__menu">
-
+        <li class="header__link-item">
+          <a href="#" class="header__link">О нас</a>
+        </li>
+        <li class="header__link-item">
+          <a href="#" class="header__link">Преимущества</a>
+        </li>
+        <li class="header__link-item">
+          <a href="#" class="header__link">Работа сервиса</a>
+        </li>
+        <li class="header__link-item">
+          <a href="#" class="header__link">Вступить в White list</a>
+        </li>
       </ul>
       <div class="header__button">
-
+        <button class="header__login" type="button">Логин</button>
+        <button class="header__register" type="button">Регистрация</button>
       </div>
     </nav>
     <div class="header__content">
       <div class="header__description">
-        <h1 class="header__title"></h1>
-        <p class="header__subtitle"></p>
-        <button class="header__submit"></button>
-        <span class="header__note"></span>
+        <h1 class="header__title">Первый в мире сервис для постановки и улучшения русской речи для детей</h1>
+        <p class="header__subtitle">Вступите в white-лист и получите 4 бесплатных занятия в числе первых пользователей бесплатно</p>
+        <span class="header__label">3-7 лет</span>
+        <button class="header__submit">Вступить</button>
+        <span class="header__note">Количество мест ограничено!</span>
       </div>
       <div class="header__picture">
-
+        <img class="picture" src="<%=require('./images/picture.png')%>" alt="Пример мобильного приложения">
       </div>
     </div>
   </header>
@@ -60,13 +73,17 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__social">
-
+        <a href="#" class="footer__icon"></a>
+        <a href="#" class="footer__icon"></a>
+        <a href="#" class="footer__icon"></a>
       </div>
-      <div class="footer__copyright">
-
+      <div class="footer__description">
+        <p class="footer__copyright">&copy; Inno Lingvo, 2019-2022</p>
+        <a class="footer__link">Политика конфиденциальности</a>
       </div>
-      <div class="footer__adress">
-        
+      <div class="footer__adrisat">
+        <p class="footer__adress">Москва, Болотниковская ул. 31</p>
+        <p class="footer__email">il@innolingvo.ru</p>
       </div>
     </div>
   </footer>
