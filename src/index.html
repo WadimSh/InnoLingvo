@@ -40,9 +40,11 @@
         <button class="header__submit">Вступить</button>
         <span class="header__note">Количество мест ограничено!</span>
       </div>
-      <div class="header__picture">
+      <picture class="header__picture">
+        <source srcset="<%=require('./images/picture.png')%>" media="(max-width: 768px)">
+        <source srcset="<%=require('./images/picture.png')%>" media="(max-width: 320px)">
         <img class="picture" src="<%=require('./images/picture.png')%>" alt="Пример мобильного приложения">
-      </div>
+      </picture>
     </div>
   </header>
   <main class="main">
