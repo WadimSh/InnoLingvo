@@ -12,16 +12,16 @@
     <nav class="header__navigation">
       <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="Логотип">
       <ul class="header__menu">
-        <li class="header__link-item">
+        <li>
           <a href="#" class="header__link">О нас</a>
         </li>
-        <li class="header__link-item">
+        <li>
           <a href="#" class="header__link">Преимущества</a>
         </li>
-        <li class="header__link-item">
+        <li>
           <a href="#" class="header__link">Работа сервиса</a>
         </li>
-        <li class="header__link-item">
+        <li>
           <a href="#" class="header__link">Вступить в White list</a>
         </li>
       </ul>
@@ -31,12 +31,19 @@
       </div>
     </nav>
     <div class="header__content">
-      <div class="header__description">
-        <h1 class="header__title">Первый в мире сервис для постановки и улучшения русской речи для детей</h1>
-        <p class="header__subtitle">Вступите в white-лист и получите 4 бесплатных занятия в числе первых пользователей бесплатно</p>
-        <span class="header__label">3-7 лет</span>
-        <button class="header__submit">Вступить</button>
-        <span class="header__note">Количество мест ограничено!</span>
+      <div class="header__cover">
+        <div class="header__wrapper-column">
+          <h1 class="header__title">Первый в мире сервис для&nbsp;постановки и улучшения русской&nbsp;речи для детей</h1>
+          <p class="header__subtitle">Вступите в white-лист и получите 4 бесплатных занятия&nbsp;в числе первых пользователей бесплатно</p>
+          <!--<span class="header__label">3-7 лет</span>-->
+        </div>
+        <div class="header__wrapper-row">
+          <button class="header__submit">Вступить</button>
+          <div class="header__wrapper">
+            <span class="header__note">Количество мест <span>ограничено!</span></span>
+          </div>
+          
+        </div>
       </div>
       <picture class="header__picture">
         <source srcset="<%=require('./images/picture.png')%>" media="(max-width: 768px)">
