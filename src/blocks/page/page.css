@@ -1,11 +1,19 @@
 .page {
   margin: 0 auto;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  background-color: #fff;
+  --primary_font-color: #FFFFFF;
+  --second-primary-color: #E9EBF7;
+  --button-color: #FF00D6;
+  --title-font-color: #1D1D1D;
+  --subtitle-font-color: #535353;
+    
+  --one-point-color: #3477FA;
+  --two-point-color: #A747FB;
+  --tree-point-color: #FA624E;
 }

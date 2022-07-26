@@ -1,0 +1,95 @@
+.header {
+  background: linear-gradient(91.25deg, #BF2ED1 .92%, #985CE4 51.04%, #6E8BF8 99.92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+.header__logo {
+  height: auto;
+  width: 100%;
+  max-width: 175px;
+  max-height: 40px;
+  object-fit: contain;
+  object-position: top;
+  margin-right: 60px;
+}
+
+.header__menu {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header__link-item:not(:last-child) {
+  margin-right: 33px;
+}
+
+.header__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--primary_font-color);
+  text-decoration: none;
+}
+
+.header__link:hover {
+  opacity: .5;
+}
+
+.header__link:focus,
+.header__link:active {
+  color: lightblue;
+}
+
+.header__login {
+  border: 1px solid var(--primary_font-color);
+  border-radius: 10px;
+  padding: 10px 35px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--primary_font-color);
+  background-color: transparent;
+  margin-right: 25px;
+  transition: opacity .3s ease;
+}
+
+.header__login:hover {
+  border: 1px solid transparent;
+  box-shadow: 10px 10px 10px rgba(70, 70, 70, 0.12), -10px -10px 20px rgba(255, 255, 255, 0.5);
+  transition: background-color 3s cubic-bezier(.1, .8, .5, 2), color .3s linear, box-shadow .5s ease-in-out;
+  cursor: pointer;
+}
+
+.header__register {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 35px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #434343;
+}
+
+.header__register:hover {
+  background-color: var(--second-primary-color);
+  box-shadow: 10px 10px 15px rgba(70, 70, 70, 0.12), -10px -10px 15px rgba(255, 255, 255, 0.5);
+  transition: background-color 3s cubic-bezier(.1, .8, .5, 2), color .3s linear, box-shadow .5s ease-in-out;
+  cursor: pointer;
+}
