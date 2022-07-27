@@ -1,4 +1,4 @@
-@import url(../animation/jello-horizontal.js);
+@import url(../animation/jello-horizontal.css);
 
 .header {
   background: linear-gradient(91.25deg, #BF2ED1 .92%, #985CE4 51.04%, #6E8BF8 99.92%);
@@ -15,6 +15,7 @@
   align-items: center;
   width: calc(950px + (1160 - 950) * ((100vw - 320px) / (1920 - 320)));
   margin-bottom: calc(40px + (111 - 40) * ((100vw - 320px) / (1920 - 320)));
+  z-index: 20;
 }
 
 .header__logo {
@@ -101,6 +102,7 @@
   justify-content: space-between;
   width: calc(950px + (1160 - 950) * ((100vw - 320px) / (1920 - 320)));
   margin-bottom: 70px;
+  z-index: 20;
 }
 
 .header__cover {
@@ -171,6 +173,7 @@
 .header__picture {
   width: 337px;
   object-fit: contain;
+
 }
 
 .header__wrapper-column {
