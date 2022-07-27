@@ -1,3 +1,5 @@
+@import url(../animation/jello-horizontal.js);
+
 .header {
   background: linear-gradient(91.25deg, #BF2ED1 .92%, #985CE4 51.04%, #6E8BF8 99.92%);
   display: flex;
@@ -33,12 +35,6 @@
  
 }
 
-@media screen and (max-width: 1950px) {
-  .header__menu {
-    margin-right: calc(10px + (26 - 10) * ((100vw - 320px) / (1950 - 320)));
-  }
-}
-
 .header__link {
   font-weight: 500;
   font-size: 16px;
@@ -55,12 +51,6 @@
   display: flex;
   justify-content: space-between;
   width: 311px;
-}
-
-@media screen and (max-width: 750px) {
-  .header__button {
-    display: none;
-  }
 }
 
 .header__login {
@@ -108,30 +98,6 @@
   animation: jello-horizontal .9s both;
 }
 
-@keyframes jello-horizontal {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    transform: scale3d(1.25, .75, 1);
-  }
-  40% {
-    transform: scale3d(.75, 1.25, 1);
-  }
-  50% {
-    transform: scale3d(1.15, .85, 1);
-  }
-  65% {
-    transform: scale3d(.95, 1.05, 1);
-  }
-  75% {
-    transform: scale3d(1.05, .95, 1);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
-}
-
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -141,27 +107,6 @@
 
 .header__cover {
   width: calc(300px + (705 - 300) * ((100vw - 320px) / (1920 - 320)));
-}
-
-@media screen and (max-width: 1050px) {
-  .header__navigation, .header__content, .header__cover {
-    width: calc(300px + (940 - 300) * ((100vw - 320px) / (1050 - 320)));
-  }
-
-  .header__menu {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .header__content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header__cover {
-    margin-bottom: 30px;
-  }
 }
 
 .header__title {
@@ -226,6 +171,50 @@
   font-weight: 700;
 }
 
+.header__picture {
+  width: 337px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1950px) {
+  .header__menu {
+    margin-right: calc(10px + (26 - 10) * ((100vw - 320px) / (1950 - 320)));
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header__navigation, .header__content, .header__cover {
+    width: calc(300px + (940 - 300) * ((100vw - 320px) / (1050 - 320)));
+  }
+
+  .header__menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .header__picture {
+    width: 305px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__cover {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header__button {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .header__subtitle {
     margin-bottom: 20px;
@@ -246,17 +235,6 @@
 
   .header__note {
     font-size: 14px;
-  }
-}
-
-.header__picture {
-  width: 337px;
-  object-fit: contain;
-}
-
-@media screen and (max-width: 1020px) {
-  .header__picture {
-    width: 305px;
   }
 }
 
