@@ -1,0 +1,101 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: calc(44px + (86 - 44) * ((100vw - 320px) / (1024 - 320)));
+  margin-bottom: calc(52px + (85 - 52) * ((100vw - 320px) / (1024 - 320)));
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(950px + (1160 - 950) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 153px;
+}
+
+.footer__icon {
+  height: 43px;
+  width: 43px;
+  object-fit: contain;
+  transition: transform .3s ease-in;
+}
+
+.footer__icon:hover {
+  transform: translateY(-5px);
+}
+
+.footer__description {
+  width: 281px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__adrisat {
+  width: 275px;
+}
+
+.footer__copyright,
+.footer__adress,
+.footer__email {
+  margin: 0;
+  font-weight: 500;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(21px + (24 - 21) * ((100vw - 320px) / (1920 - 320)));
+  text-align: center;
+  color: var(--subtitle-font-color);
+}
+
+.footer__adress,
+.footer__email {
+  text-align: end;
+}
+
+.footer__link {
+  font-weight: 500;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(21px + (24 - 21) * ((100vw - 320px) / (1920 - 320)));
+  color: var(--link-font-color);
+}
+
+.inst {
+  background-image: url(../../images/inst.svg);
+}
+
+.fb {
+  background-image: url(../../images/fb.svg);
+}
+
+.youtube {
+  background-image: url(../../images/youtube.svg);
+}
+
+@media screen and (max-width: 1050px) {
+  .footer__container {
+    width: calc(281px + (940 - 281) * ((100vw - 320px) / (1050 - 320)));
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+  }
+
+  .footer__container div:nth-child(2) {
+    order: -1;
+  }
+
+  .footer__adress,
+  .footer__email {
+    text-align: center;
+  }
+}
