@@ -63,6 +63,7 @@
   color: var(--primary_font-color);
   background-color: transparent;
   margin-right: calc(10px + (26 - 10) * ((100vw - 320px) / (1950 - 320)));
+  box-shadow: 0px 10px 30px -3px rgba(0, 0, 0, .25);
   transition: transform .3s ease-in;
 }
 
@@ -86,6 +87,7 @@
   text-align: center;
   color: #434343;
   transition: transform .3s ease-in;
+  box-shadow: 0px 10px 30px -3px rgba(0, 0, 0, .25);
 }
 
 .header__register:hover {
@@ -97,11 +99,30 @@
   animation: jello-horizontal .9s both;
 }
 
+.header__button-menu {
+  display: none;
+  background-image: url(../../images/menu.png);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 10px 30px -3px rgba(0, 0, 0, .25);
+  transition: transform .3s ease-in;
+}
+
+.header__button-menu:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.header__button-menu:active {
+  animation: jello-horizontal .9s both;
+}
+
 .header__content {
   display: flex;
   justify-content: space-between;
   width: calc(950px + (1160 - 950) * ((100vw - 320px) / (1920 - 320)));
-  
   z-index: 20;
 }
 
@@ -137,6 +158,7 @@
   text-align: center;
   color: var(--primary_font-color);
   transition: transform .3s ease-in;
+  box-shadow: 0px 10px 30px -3px rgba(0, 0, 0, .25);
 }
 
 .header__submit:hover {
@@ -204,6 +226,15 @@
 
   .header__menu {
     display: none;
+  }
+
+  .header__button {
+    margin-left: auto;
+  }
+
+  .header__button-menu {
+    display: block;
+    margin-left: 40px;
   }
 }
 
