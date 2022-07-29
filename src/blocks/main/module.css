@@ -1,3 +1,19 @@
 .module {
   background-color: var(--second-primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module__container {
+  padding-top: calc(75px + (120 - 75) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: calc(75px + (120 - 75) * ((100vw - 320px) / (1920 - 320)));
+  width: calc(950px + (1160 - 950) * ((100vw - 320px) / (1920 - 320)));
+}
+
+
+@media screen and (max-width: 1050px) {
+  .module__container {
+    width: calc(281px + (940 - 281) * ((100vw - 320px) / (1050 - 320)));
+  }
 }

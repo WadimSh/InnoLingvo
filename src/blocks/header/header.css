@@ -19,13 +19,14 @@
 }
 
 .header__logo {
-  max-width: 220px;
-  max-height: 40px;
+  max-width: 174px;
+  height: 40px;
   object-fit: contain;
+  margin-right: calc(5px + (50 - 5) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .header__menu {
-  margin: 0 auto;
+  margin: 0 20px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -259,7 +260,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
   .header__button {
     display: none;
   }
