@@ -112,7 +112,7 @@
 
 @media screen and (max-width: 1050px) {
   .intro__container {
-    width: calc(281px + (940 - 281) * ((100vw - 320px) / (1050 - 320)));
+    width: calc(300px + (940 - 300) * ((100vw - 320px) / (1050 - 320)));
   }
 }
 
@@ -127,6 +127,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  .intro__container {
+    align-items: center;
+  }
+
   .intro__block {
     flex-direction: column;
     gap: 45px;
