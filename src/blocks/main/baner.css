@@ -1,0 +1,26 @@
+.baner {
+  background-color: var(--second-primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.baner__box {
+  width: calc(893px + (1160 - 893) * ((100vw - 320px) / (2560 - 320)));
+  position: relative;
+  top: 50px;
+}
+
+.image {
+  background-image: url(../../images/baner-img.png);
+  object-fit: contain;
+}
+
+.baner__title {
+  margin: 55px 42px 32px;
+  font-weight: 900;
+  font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (2560 - 320)));
+  line-height: calc(22px + (49 - 22) * ((100vw - 320px) / (2560 - 320)));
+  color: var(--primary_font-color);
+}
