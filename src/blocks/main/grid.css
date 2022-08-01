@@ -8,6 +8,7 @@
 
 .grid__container {
   padding-top: calc(75px + (120 - 75) * ((100vw - 320px) / (2560 - 320)));
+  margin-bottom: calc(75px + (120 - 75) * ((100vw - 320px) / (2560 - 320)));
   width: calc(893px + (1160 - 893) * ((100vw - 320px) / (2560 - 320)));
 }
 
@@ -20,8 +21,125 @@
   color: var(--title-font-color);
 }
 
+.grid__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: calc(893px + (1160 - 893) * ((100vw - 320px) / (2560 - 320)));
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.grid__item {
+  background-color: var(--primary_font-color);
+  box-shadow: 0px 10px 30px -6px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  padding: 33px 40px 46px;
+}
+
+.gtid__item-image {
+  width: 84px;
+  height: 84px;
+}
+
+.gtid__item-title {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--subtitle-font-color);
+}
+
+.gtid__item-subtitle {
+  margin: 13px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--caption-font-color);
+}
+
+.gtid__item-link {
+  text-decoration: none;
+  color: var(--link-main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  position: relative;
+}
+
+.gtid__item-link::before {
+  content: "";
+  background-image: url(../../images/arrow.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 100%;
+  position: absolute;
+  top: 2px;
+  right: -30px;
+}
+
 @media screen and (max-width: 1050px) {
   .grid__container {
     width: calc(300px + (940 - 300) * ((100vw - 320px) / (1050 - 320)));
+  }
+
+  .grid__list {
+    width: calc(300px + (940 - 300) * ((100vw - 320px) / (1050 - 320)));
+    gap: 32px;
+  }
+
+  .grid__item {
+    padding: 20px 20px 27px;
+  }
+
+  .gtid__item-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .gtid__item-title {
+    margin: 17px 0;
+  }
+
+  .gtid__item-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+  }
+
+  .grid__title {
+    width: 300px;
+  }
+
+  .grid__list {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .grid__item {
+    width: 280px;
+    padding-bottom: 25px;
+  }
+
+  .gtid__item-image {
+    width: 42px;
+    height: 42px;
+  }
+
+  .gtid__item-title {
+    margin: 10px 0;
   }
 }

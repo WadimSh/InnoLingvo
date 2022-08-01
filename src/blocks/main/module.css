@@ -62,7 +62,7 @@
   font-weight: 700;
   font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (2560 - 320)));
   line-height: calc(27px + (39 - 27) * ((100vw - 320px) / (2560 - 320)));
-  color: var(--title-font-color);
+  color: var(--caption-font-color);
   padding-top: 30px;
 }
 
