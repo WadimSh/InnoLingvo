@@ -1,3 +1,27 @@
 .grid {
   background-color: var(--second-primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid__container {
+  padding-top: calc(75px + (120 - 75) * ((100vw - 320px) / (2560 - 320)));
+  width: calc(893px + (1160 - 893) * ((100vw - 320px) / (2560 - 320)));
+}
+
+.grid__title {
+  margin: 0;
+  margin-bottom: calc(44px + (80 - 44) * ((100vw - 320px) / (2560 - 320)));
+  font-weight: 900;
+  font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (2560 - 320)));
+  line-height: calc(27px + (49 - 27) * ((100vw - 320px) / (2560 - 320)));
+  color: var(--title-font-color);
+}
+
+@media screen and (max-width: 1050px) {
+  .grid__container {
+    width: calc(300px + (940 - 300) * ((100vw - 320px) / (1050 - 320)));
+  }
 }
