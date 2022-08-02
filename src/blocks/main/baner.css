@@ -9,7 +9,7 @@
 }
 
 .baner__box {
-  width: calc(893px + (1160 - 893) * ((100vw - 320px) / (2560 - 320)));
+  width: calc(950px + (1160 - 950) * ((100vw - 320px) / (2560 - 320)));
   box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, .25);
   border-radius: 10px;
   position: relative;
@@ -82,4 +82,48 @@
 
 .baner__comment span {
   font-weight: 700;
+}
+
+@media screen and (max-width: 1050px) {
+  .baner__box {
+    width: calc(300px + (940 - 300) * ((100vw - 320px) / (1050 - 320)));
+  }
+
+  .baner__title {
+    margin: 55px 20px 56px;
+  }
+
+  .baner__offer {
+    margin: 0 20px 57px;
+  }
+
+  .mobaile {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .baner__title {
+    margin: 50px 10px 20px;
+  }
+
+  .baner__offer {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px 50px;
+    gap: 20px;
+  }
+
+  .baner__button {
+    width: calc(279px + (750 - 279) * ((100vw - 320px) / (1050 - 320)));
+    margin-right: 0;
+  }
+
+  .baner__comment {
+    width: calc(279px + (750 - 279) * ((100vw - 320px) / (1050 - 320)));
+  }
+
+  .mobaile {
+    order: -1;
+  }
 }

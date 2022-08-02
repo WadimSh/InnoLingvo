@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(950px + (1160 - 950) * ((100vw - 320px) / (1920 - 320)));
+  width: calc(950px + (1160 - 950) * ((100vw - 320px) / (2560 - 320)));
 }
 
 .footer__social {
