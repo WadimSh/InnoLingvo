@@ -8,13 +8,19 @@
 
 .baner__box {
   width: calc(893px + (1160 - 893) * ((100vw - 320px) / (2560 - 320)));
+  box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, .25);
+  border-radius: 10px;
   position: relative;
-  top: 50px;
+  top: 150px;
 }
 
 .image {
   background-image: url(../../images/baner-img.png);
   object-fit: contain;
+}
+
+.gradient {
+  background: linear-gradient(93.01deg, #BE30D2 6.8%, #7188F7 99.21%);
 }
 
 .baner__title {
@@ -23,4 +29,43 @@
   font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (2560 - 320)));
   line-height: calc(22px + (49 - 22) * ((100vw - 320px) / (2560 - 320)));
   color: var(--primary_font-color);
+}
+
+.baner__offer {
+  display: flex;
+  align-items: center;
+  margin: 0 42px 57px;
+}
+
+.min {
+  width: 146px;
+}
+
+.max {
+  width: 730px;
+}
+
+.baner__button {
+  width: 273px;
+  height: 66px;
+  margin-right: 35px;
+  background-color: var(--button-color);
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--primary_font-color);
+}
+
+.baner__comment {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--primary_font-color);
+  
+}
+
+.baner__comment span {
+  font-weight: 700;
 }

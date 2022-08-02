@@ -1,0 +1,14 @@
+.video {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(950px + (1160 - 950) * ((100vw - 320px) / (2560 - 320)));
+}

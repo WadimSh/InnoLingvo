@@ -8,7 +8,6 @@
 
 .grid__container {
   padding-top: calc(75px + (120 - 75) * ((100vw - 320px) / (2560 - 320)));
-  margin-bottom: calc(75px + (120 - 75) * ((100vw - 320px) / (2560 - 320)));
   width: calc(893px + (1160 - 893) * ((100vw - 320px) / (2560 - 320)));
 }
 

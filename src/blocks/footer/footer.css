@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: calc(44px + (86 - 44) * ((100vw - 320px) / (1024 - 320)));
+  padding-top: 250px;
   margin-bottom: calc(52px + (85 - 52) * ((100vw - 320px) / (1024 - 320)));
 }
 
