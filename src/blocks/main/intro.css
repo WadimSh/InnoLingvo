@@ -37,6 +37,14 @@
   font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1920 - 320)));
   line-height: calc(27px + (49 - 27) * ((100vw - 320px) / (1920 - 320)));
   color: var(--title-font-color);
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 400ms ease-in-out, opacity 400ms ease-out;
+}
+
+.intro__title-active {
+  transform: translateY(50px);
+  opacity: 0;
 }
 
 .intro__list {
@@ -153,6 +161,7 @@
 
 @media screen and (max-width: 320px) {
   .intro__picture {
+    align-self: center;
     width: 200px;
   }
 }
