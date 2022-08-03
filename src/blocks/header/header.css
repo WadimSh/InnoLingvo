@@ -69,7 +69,7 @@
 }
 
 .header__login:hover {
-  opacity: .8;
+  transform: translateY(-3px);
   cursor: pointer;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .header__register:hover {
-  opacity: .8;
+  transform: translateY(-3px);
   cursor: pointer;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .header__button-menu:hover {
-  opacity: .8;
+  transform: translateY(-3px);
   cursor: pointer;
 }
 
@@ -163,7 +163,7 @@
 }
 
 .header__submit:hover {
-  opacity: .8;
+  transform: translateY(-3px);
   cursor: pointer;
 }
 

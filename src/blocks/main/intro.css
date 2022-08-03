@@ -104,10 +104,11 @@
   padding: 18px 71px;
   border: 1px solid var(--link-main-color);
   border-radius: 10px;
+  transition: transform .3s ease-in;
 }
 
 .intro__link:hover {
-  opacity: .6;
+  transform: translateY(-3px);
 }
 
 @media screen and (max-width: 1050px) {

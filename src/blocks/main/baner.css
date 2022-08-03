@@ -17,12 +17,14 @@
 }
 
 .image {
-  background-image: url(../../images/baner-img.png);
-  object-fit: contain;
+  background: url(../../images/baner-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .gradient {
   background: linear-gradient(93.01deg, #BE30D2 6.8%, #7188F7 99.21%);
+  
 }
 
 .baner__title {
@@ -64,7 +66,7 @@
 }
 
 .baner__button:hover {
-  opacity: .8;
+  transform: translateY(-3px);
   cursor: pointer;
 }
 

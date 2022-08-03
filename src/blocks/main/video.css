@@ -20,6 +20,7 @@
   font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (2560 - 320)));
   line-height: calc(27px + (49 - 27) * ((100vw - 320px) / (2560 - 320)));
   color: var(--title-font-color);
+  text-align: left;
 }
 
 .video__note {
@@ -28,6 +29,20 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--subtitle-font-color);
+  position: relative;
+}
+
+.video__note::before {
+  content: "";
+  background-image: url(../../images/shape.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 43px;
+  position: absolute;
+  top: 2px;
+  left: -50px;
 }
 
 .video__frame {
@@ -43,12 +58,15 @@
   .video__caption {
     width: calc(300px + (940 - 300) * ((100vw - 320px) / (1050 - 320)));
   }
-  
-  
 }
 
 @media screen and (max-width: 900px) {
+  .video__caption {
+    align-items: flex-start;
+  }
+
   .video__note {
+    margin-left: 30px;
     width: 278px;
     font-size: 14px;
     line-height: 18px;
@@ -58,6 +76,12 @@
     width: calc(280px + (700 - 280) * ((100vw - 320px) / (900 - 320)));
     height: calc(153px + (400 - 153) * ((100vw - 320px) / (900 - 320)));
     margin-bottom: 79px;
+  }
+
+  .video__note::before {
+    width: 26px;
+    height: 28px;
+    left: -35px;
   }
 }
 
