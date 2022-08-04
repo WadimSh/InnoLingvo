@@ -357,3 +357,19 @@
   color: var(--link-font-color);
   opacity: 0.8;
 }
+
+.mobile-menu__login {
+
+}
+.mobile-menu__register {
+  
+}
+
+@media screen and (max-width: 770px) {
+  .mobile-menu__login {
+
+  }
+  .mobile-menu__register {
+
+  }
+}

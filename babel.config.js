@@ -5,7 +5,7 @@ const presets = [
       ie: '11',
       firefox: '50',
       chrome: '64',
-      safari: '11.1'
+      safari: '11.0'
     },
 
     useBuiltIns: "entry"
