@@ -1,6 +1,5 @@
 <h1 align="center">Проект `Inno Lingvo`</h1>
 
----
 
 ## О проекте
 
