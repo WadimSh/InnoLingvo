@@ -6,11 +6,15 @@ const mobaileCloseButton = document.querySelector('.mobile-menu__close');
 const popupMenu = document.querySelector('.mobile-menu');
 
 const mobaileMenu = () => {
-  popupMenu.classList.add('mobile-menu_is-open');
+  setTimeout(() => {
+    popupMenu.classList.add('mobile-menu_is-open');
+  }, 300)
 }
 
 const closeMenu = () => {
-  popupMenu.classList.remove('mobile-menu_is-open');
+  setTimeout(() => {
+    popupMenu.classList.remove('mobile-menu_is-open');
+  }, 300)  
 }
 
 mobaileMenuButton.addEventListener('click', mobaileMenu);
