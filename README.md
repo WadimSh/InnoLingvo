@@ -22,5 +22,5 @@
 
 ### Ссылки
 
-[Inno Lingvo](https://wadimsh.github.io/Project/dist/index.html) — ссылка на gh-pages  
+[Inno Lingvo](https://wadimsh.github.io/inno-lingvo/dist/index.html) — ссылка на gh-pages  
 
